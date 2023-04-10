@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17_HTMLCSS_test.html</title>
+    <style type="text/css">
+        #base{position:relative; width:495px; height:365px; border:1px solid black; margin:0 auto;}
+
+        #subject{position:relative; width: 410px; height: 65px; border: 1px dashed black; margin:0 auto;
+        font-size:150%;font-weight: bold; line-height: 75px;}
+        .movie{position: relative; width:410px; height: 35px; border-bottom:2px dotted black; margin:0 auto;line-height:35px; overflow: hidden; }
+       .name{position: absolute; width:330px;height:35px;color:blue; font-size: 110%; font-weight: bold;line-height: 35px; border:1px dotted blue; background: white; }
+        .star{position:absolute; width:130px;height:35px;
+        border:1px dotted red; line-height: 35px; font-size:100%; font-weight: bold; right:0; color:red; text-align: center; background: white;}
+        span.num { color: black;}
+        .movie .poster{position:absolute; width:180px; height: 105px; margin-top: 10px; margin-right: 8px; }
+        
+        .review{position:absolute;width:330px; height: 70px; border:1px dashed blue; font-size:70%; right:1px;top:35px; }
+    
+        .review ul{list-style: none; padding: 0;margin: 0; }
+        .review ul li{position:relative; padding:0; display: inline-block; line-height: 10px; font-weight: bold;}
+
+        .movie:hover{height: 105px;}
+        .movie:hover .name{left:75px;}
+        
+        
+        
+
+     
+
+    </style>
+</head>
+<body>
+    <div id="base">
+        <div id="subject">개봉영화평점</div>
+        <div class="movie">
+             <div class="poster"><img src="images/t1.png" ></div>
+            <div class="name">인생은 아름다워</div>
+            <div class="star">★★★★<span class="num">★ 8.35</span></div>
+            <div class="review">
+                <ul>
+                   
+                    <li>
+                    <p>참 따뜻하고 익히 아는 음악과 함께 옛생각도 나는 고마운...</p>
+                    <p>요새 봤던 한국영화중 가장 감동</p>
+                    <p>기대 1도 안하고 봤는데 너무 좋았어요.</p>
+                </li>
+                </ul>
+        </div>
+    </div>  
+
+    <div class="movie">
+        <div class="poster"><img src="images/t2.png" ></div>
+       <div class="name">극장판 짱구는 못말려:수수께끼!</div>
+       <div class="star">★★★★★<span class="num"> 9.34</span></div>
+       <div class="review">
+           <ul>
+               <li>
+               <p>짱구 극장판 중에 제일 재밌었음... 낙서왕국 N차 뛰었었는...</p>
+               <p>이 시대를 살아가는 철수들에게 보내는 짱구의 위로 메세지!</p>
+               <p>후반이 진짜 웃긴데 괜히 눈물남 넘 재밌었다</p>
+           </li>
+           </ul>
+   </div>
+</div>  
+      <div class="movie">
+      <div class="poster"><img src="images/t3.png" ></div>
+      <div class="name">공조2:인터내셔날</div>
+      <div class="star">★★★★<span class="num">★ 8.49</span></div>
+      <div class="review">
+          <ul>
+              <li>
+              <p>공조2는 눈호강 오지게 하다 나옴.. 현빈&헤니 진짜 가슴 벅...</p>
+              <p>묵직했던 전편에 비해 이번엔 더 시원한 액션과 유쾌한 큰웃...</p>
+              <p>와 이렇게 재밌어서 중간에 한 번도 시계 안 본 한국 영화는...</p>
+          </li>
+          </ul>
+  </div>
+</div>
+     
+        <div class="movie"><div class="poster"><img src="images/t4.png" ></div>
+        <div class="name"> 아인보: 아마존의 전설</div>
+        <div class="star">★★★<span class="num">★★ 7.88</span></div>
+        <div class="review">
+            <ul>
+                <li>
+                <p>무거운 주제 영화보고 보면 더 즐길 수 있음</p>
+                <p>스토리와 작화가 좋고 메세지도 훌륭하다</p>
+                <p>아이들과 함께 보러 갔는데 아주 좋아하네요 아마존의 영상...</p>
+            </li>
+            </ul>
+    </div>
+</div>
+
+    </div>  
+</body>
+</html>
